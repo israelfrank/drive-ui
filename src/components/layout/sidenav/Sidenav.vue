@@ -10,8 +10,6 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-divider></v-divider>
-
       <router-link to="/my-drive">
         <v-list-item link id="my-drive-link">
           <v-list-item-icon>
@@ -20,8 +18,6 @@
           <v-list-item-title>{{ $t("sidenav.MyDrive") }}</v-list-item-title>
         </v-list-item>
       </router-link>
-
-      <v-divider></v-divider>
 
       <router-link to="/shared-with-me">
         <v-list-item link>
@@ -32,8 +28,6 @@
         </v-list-item>
       </router-link>
 
-      <v-divider></v-divider>
-
       <router-link to="/last-updated">
         <v-list-item link>
           <v-list-item-icon>
@@ -42,8 +36,6 @@
           <v-list-item-title>{{ $t("sidenav.LastUpdated") }}</v-list-item-title>
         </v-list-item>
       </router-link>
-
-      <v-divider></v-divider>
 
       <router-link to="/external-transferd">
         <v-list-item link>
@@ -54,16 +46,12 @@
         </v-list-item>
       </router-link>
 
-      <v-divider></v-divider>
-
       <v-list-item link @click="openApprovalService">
         <v-list-item-icon>
           <img class="icons" src="@/assets/icons/pending.svg" />
         </v-list-item-icon>
         <v-list-item-title>{{ myExternalSharesName }}</v-list-item-title>
       </v-list-item>
-
-      <v-divider></v-divider>
 
       <!-- <router-link to="/favorites">
         <v-list-item link>
@@ -74,7 +62,6 @@
         </v-list-item>
       </router-link>
 
-      <v-divider></v-divider>
 
       <router-link to="/deleted-files">
         <v-list-item link>
@@ -83,9 +70,7 @@
           </v-list-item-icon>
           <v-list-item-title>{{ $t("sidenav.Deleted") }}</v-list-item-title>
         </v-list-item>
-      </router-link>
-
-      <v-divider></v-divider>-->
+      </router-link>-->
 
       <div>
         <v-list-item>
@@ -96,8 +81,6 @@
         </v-list-item>
         <Quota :quota="quota" />
       </div>
-
-      <v-divider></v-divider>
     </v-list>
     <img id="yesodot" class="icons" src="@/assets/images/yesodot.svg" />
   </v-navigation-drawer>
@@ -115,32 +98,32 @@ export default {
       "version",
       "quota",
       "approvalServiceUrl",
-      "myExternalSharesName"
-    ])
+      "myExternalSharesName",
+    ]),
   },
   methods: {
     ...mapActions(["getQuota"]),
     openApprovalService() {
       window.open(this.approvalServiceUrl);
-    }
+    },
   },
   created() {
     this.getQuota();
-  }
+  },
 };
 </script>
 
 <style scoped>
 #sidenav {
-  background-image: linear-gradient(to bottom, #357e6f, #4d804d);
+  background-image: linear-gradient(to bottom, #5f7286, #9ad4e2);
   display: block;
 }
 .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
-  color: #c8d9d5 !important;
+  color: white !important;
   padding: 0 20px;
 }
 .theme--light.v-divider {
-  border-color: #255f53 !important;
+  border-color: #e9e9e9 !important;
 }
 .v-list {
   padding: 0;

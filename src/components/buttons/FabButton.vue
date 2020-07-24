@@ -15,7 +15,7 @@
     </template>
     <v-tooltip right>
       <template v-slot:activator="{ on }">
-        <v-btn @click.stop="$refs.newFolder.open()" v-on="on" fab big color="#357e6f">
+        <v-btn @click.stop="$refs.newFolder.open()" v-on="on" fab big color="#8db9d9">
           <NamePopup
             img="green-create-folder.svg"
             ref="newFolder"
@@ -29,7 +29,7 @@
     </v-tooltip>
     <v-tooltip right>
       <template v-slot:activator="{ on }">
-        <v-btn v-on="on" fab color="#357e6f" @click="$refs.upload.open()">
+        <v-btn v-on="on" fab color="#8db9d9" @click="$refs.upload.open()">
           <img class="icon" src="@/assets/icons/upload.svg" />
         </v-btn>
       </template>
@@ -48,12 +48,12 @@ export default {
   name: "FabButton",
   data() {
     return {
-      fab: false
+      fab: false,
     };
   },
   components: { Upload, NamePopup },
   computed: {
-    ...mapGetters(["currentFolder"])
+    ...mapGetters(["currentFolder"]),
   },
   methods: {
     onFolderConfirm(name) {
@@ -70,10 +70,10 @@ export default {
     },
     canUpload() {
       return !this.currentFolder || writeRole(this.currentFolder.role);
-    }
+    },
   },
   created() {
-    window.addEventListener("keydown", event => {
+    window.addEventListener("keydown", (event) => {
       // ctrl o shortcut to upload file
       if (
         event.keyCode === 79 &&
@@ -84,7 +84,7 @@ export default {
         document.getElementById("upload-input").click();
       }
     });
-  }
+  },
 };
 </script>
 
