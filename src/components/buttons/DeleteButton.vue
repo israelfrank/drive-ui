@@ -19,7 +19,7 @@
     <DeletePopup
       ref="popup"
       @delete="onDelete"
-      img="deletePopup.svg"
+      img="delete.svg"
       :text="$t('file.Delete')"
       :button="$t('buttons.DeleteNow')"
     />

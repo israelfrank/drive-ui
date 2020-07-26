@@ -115,7 +115,7 @@ export default {
 
 <style scoped>
 #sidenav {
-  background-image: linear-gradient(to bottom, #5f7286, #9ad4e2);
+  background-image: linear-gradient(to bottom, #5f7286, #8db9d9);
   display: block;
 }
 .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {

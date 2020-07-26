@@ -22,14 +22,14 @@ export default {
 .quota-bar {
   height: 0.2em;
   width: 100%;
-  background-color: #e9e9e9;
+  background-color: #607488;
   border-radius: 0.4em;
 }
 
 .quota-fill {
   height: 100%;
   width: 100%;
-  background-color: #607488;
+  background-color: #e9e9e9;
   border-radius: 0.4em;
 }
 </style>}
