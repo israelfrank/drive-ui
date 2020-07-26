@@ -15,7 +15,7 @@
     </template>
     <v-tooltip right>
       <template v-slot:activator="{ on }">
-        <v-btn @click.stop="$refs.newFolder.open()" v-on="on" fab big color="#357e6f">
+        <v-btn @click.stop="$refs.newFolder.open()" v-on="on" fab big color="#88bcd9">
           <NamePopup
             img="green-create-folder.svg"
             ref="newFolder"
@@ -29,7 +29,7 @@
     </v-tooltip>
     <v-tooltip right>
       <template v-slot:activator="{ on }">
-        <v-btn v-on="on" fab color="#357e6f" @click="$refs.upload.open()">
+        <v-btn v-on="on" fab color="#88bcd9" @click="$refs.upload.open()">
           <img class="icon" src="@/assets/icons/upload.svg" />
         </v-btn>
       </template>

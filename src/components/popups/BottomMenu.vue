@@ -42,8 +42,8 @@ export default {
   width: fit-content;
   padding: 8px 20px 8px 20px;
   border-radius: 10px;
-  box-shadow: 0px 30px 38px 0 rgba(53, 126, 111, 0.42);
-  background-color: #357e6f;
+  box-shadow: 0px 30px 38px 0 rgba(53, 109, 126, 0.42);
+  background-color: #5f7388;
   position: fixed;
   animation: grow 0.25s;
   bottom: 50px;

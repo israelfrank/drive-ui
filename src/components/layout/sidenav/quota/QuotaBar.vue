@@ -22,7 +22,7 @@ export default {
 .quota-bar {
   height: 0.2em;
   width: 100%;
-  background-color: #296355;
+  background-color: #61758a;
   border-radius: 0.4em;
 }
 

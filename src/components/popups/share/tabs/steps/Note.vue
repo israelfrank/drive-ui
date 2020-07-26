@@ -9,7 +9,7 @@
         :key="mark"
         :value="mark"
         :label="mark"
-        color="#357e6f"
+        color="#88bcd9"
         v-model="selected"
       ></v-checkbox>
     </div>

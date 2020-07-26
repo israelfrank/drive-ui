@@ -16,7 +16,7 @@
           :size="200"
           :width="7"
           v-if="isLoading"
-          color="#357e6f"
+          color="#88bcd9"
           indeterminate
         ></v-progress-circular>
 

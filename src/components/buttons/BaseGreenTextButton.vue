@@ -14,7 +14,7 @@ export default {
 <style scoped>
 #back-button {
   font-size: 20px;
-  color: #357e6f;
+  color: #88bcd9;
   text-decoration: underline;
 }
 </style>
