@@ -61,7 +61,7 @@ export default {
   padding-bottom: 8px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #88bcd9;
+  border-bottom: 2px solid #5f7388;
 }
 #page-name {
   font-size: 30px;
